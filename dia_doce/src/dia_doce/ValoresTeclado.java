@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class ValoresTeclado {
 	
-	public static int valorMayor(int a, int b, int c) {
+	/*public static int valorMayor(int a, int b, int c) {
         return Math.max(Math.max(a, b), c);
     }
 
     public static int valorMenor(int a, int b, int c) {
         return Math.min(Math.min(a, b), c);
-    }
+    }*/
     
 
 	public static void main(String[] args) {
@@ -27,13 +27,29 @@ public class ValoresTeclado {
 		System.out.println("Ingresa el tercer numero : " );
 		int val3 = input.nextInt();
 		
-		 int mayor = valorMayor(val1, val2, val3);
-	     int menor = valorMenor(val1, val2, val3);
-
-	        System.out.println("El mayor de los valores ingresado es: " + mayor);
-	        System.out.println("El menor valores ingresados es: " + menor);
+		int mayor = val1;
 		
-
+				if (val2 > mayor) {
+		            mayor = val2;
+		        }
+		        if (val3 > mayor) {
+		            mayor = val3;
+		        }
+		        
+		        int menor = val1;
+		        if (val2 < menor) {
+		            menor = val2;
+		        }
+		        if (val3 < menor) {
+		            menor = val3;
+		        }
+		        
+		        System.out.println("El mayor de los valores es: " + mayor);
+		        System.out.println("El menor de los valores es: " + menor);
+			
+				
+			}
+	
 	}
 
-}
+

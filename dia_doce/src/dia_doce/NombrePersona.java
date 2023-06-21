@@ -13,7 +13,7 @@ public class NombrePersona {
 		System.out.println("Por favor ingrese su edad");
 		int edad = input.nextInt();
 		
-		System.out.println("Bienvenido" + nombre);
+		System.out.println("Bienvenido(a) " + nombre);
 		
 	}
 	
